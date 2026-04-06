@@ -25,7 +25,8 @@ Arise Farms and Estate is a premium real estate platform showcasing properties, 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/emacos2012/arise-farms-estate-web.git
+git clone https://github.com/emacos20122k26/arise-farms-web.git
+
 ```
 
 2. Navigate to the project directory:
