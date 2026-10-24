@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
 /* Arise Farms and Estate - Global Styles */
 
 * {
@@ -7,27 +9,24 @@
 }
 
 :root {
-  /* Primary Colors */
-  --primary-dark: #2d5016;
-  --primary-light: #4a7c23;
-  --primary-lighter: #6b9e3f;
-  
-  /* Neutral Colors */
-  --dark: #1a1a1a;
-  --gray-dark: #333333;
-  --gray: #6c757d;
-  --gray-light: #e9ecef;
-  --light: #f8f9fa;
-  --white: #ffffff;
-  
-  /* Accent Colors */
-  --success: #28a745;
-  --danger: #dc3545;
-  --warning: #ffc107;
-  --info: #17a2b8;
-  
-  /* Typography */
-  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --primary-dark: #173b35;
+  --primary-light: #2f7564;
+  --primary-lighter: #a4c9a8;
+  --ink: #18312d;
+  --dark: #18312d;
+  --gray-dark: #49645e;
+  --gray: #71827d;
+  --gray-light: #dce6df;
+  --light: #f3f1e8;
+  --white: #fffdf7;
+  --gold: #d9a441;
+  --coral: #d86f52;
+  --success: #2f7564;
+  --danger: #b84b43;
+  --warning: #d9a441;
+  --info: #4d8a9b;
+  --font-primary: 'DM Sans', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
   --font-size-base: 16px;
   --line-height-base: 1.6;
   
@@ -40,15 +39,15 @@
   --spacing-xxl: 3rem;
   
   /* Border Radius */
-  --radius-sm: 4px;
+  --radius-sm: 3px;
   --radius-md: 8px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
   
   /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 2px 8px rgba(24, 49, 45, 0.08);
+  --shadow-md: 0 12px 28px rgba(24, 49, 45, 0.12);
+  --shadow-lg: 0 22px 50px rgba(24, 49, 45, 0.18);
   
   /* Transitions */
   --transition-fast: 0.2s ease;
@@ -65,7 +64,7 @@ body {
   font-family: var(--font-primary);
   line-height: var(--line-height-base);
   color: var(--dark);
-  background-color: var(--white);
+  background: var(--light);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -76,6 +75,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--spacing-md);
@@ -133,6 +133,14 @@ button {
   border: none;
   outline: none;
   transition: all var(--transition-normal);
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
 }
 
 button:focus-visible {

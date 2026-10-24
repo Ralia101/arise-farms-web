@@ -1,27 +1,30 @@
 import './Hero.css';
+import { ArrowDownRight, Check, CircleDollarSign, Leaf } from 'lucide-react';
 
 function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero-overlay"></div>
       <div className="hero-content">
-        <div className="hero-badge">Welcome to Arise Farms</div>
+        <div className="hero-kicker"><span className="kicker-dot"></span> Arise Farms / Pi commerce</div>
         <h1 className="hero-title">
-          Fresh From Our Farm
-          <span className="title-highlight"> to Your Table</span>
+          Food with a <span className="title-highlight">clear origin.</span>
         </h1>
         <p className="hero-description">
-          Experience the finest quality farm produce and agricultural products. 
-          We are dedicated to sustainable farming practices that deliver fresh, 
-          nutritious food straight from our fields to your family.
+          Shop produce from our Lagos farm, settle in Pi, and keep every order close to its source.
         </p>
         <div className="hero-buttons">
           <button className="btn-primary" onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}>
-            Our Products
+            Browse the harvest <ArrowDownRight size={18} />
           </button>
           <button className="btn-secondary" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
-            Contact Us
+            Talk to the farm
           </button>
+        </div>
+        <div className="hero-trust-row">
+          <span><Check size={15} /> Harvested locally</span>
+          <span><Check size={15} /> Pi payments</span>
+          <span><Check size={15} /> Direct delivery</span>
         </div>
         <div className="hero-stats">
           <div className="stat-item">
@@ -38,6 +41,12 @@ function Hero() {
           </div>
         </div>
       </div>
+      <div className="hero-aside">
+        <div className="hero-aside-image"><img src="/layout.jpeg.png" alt="Fresh produce from Arise Farms" /></div>
+        <div className="hero-aside-copy"><span>Field note 01</span><strong>Picked this week</strong><p>Vegetables, honey, grains</p></div>
+        <div className="hero-pi-card"><CircleDollarSign size={18} /><span><strong>Pi ready</strong><small>Simple, native checkout</small></span></div>
+      </div>
+      <div className="hero-scroll"><Leaf size={16} /> Scroll to explore</div>
     </section>
   );
 }
